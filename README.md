@@ -85,23 +85,17 @@ print("Outside Function",s)
 
 # 5.Create a function calculate_area(length, width=5) that calculates the area of a rectangle. If only the length is provided, the function should assume the width is 5. Show how the function behaves when called with and without provided, the function should assume the width is 5. Show how the function behaves when called with and without the width argument.
 
-def area_of_rectangle(length):
-    width = 5
+def area_of_rectangle(length, width=5):
     area = length * width
     return(area)
 
-length_of_rectangle = int(input("Enter length: "))
-AreaOfRectangle = area_of_rectangle(length_of_rectangle)
-print(f"The area of rectangle with length {length_of_rectangle} units is {AreaOfRectangle} square units.")
+Area_with_Width = area_of_rectangle(15,3)
+print(f"The area of rectangle with length and width is {Area_with_Width} square units.")
+
+Area_with_Default_Width = area_of_rectangle(15)
+print(f"The area of rectangle with length and default width is {Area_with_Default_Width} square units.")
 
 
-![PF 5 A](https://github.com/user-attachments/assets/78eef4d2-f063-42f7-b4b0-e0213de2886b)
 
-
-If width = 5 line is turned into a comment, we get the following output:
-
-
-![PF 5 B](https://github.com/user-attachments/assets/885906f3-6dde-4f56-8c8e-0f2a82daec76)
-
-
+![PF 5](https://github.com/user-attachments/assets/4c847adc-1fcc-42bf-909e-b0331a6f2bc6)
 
